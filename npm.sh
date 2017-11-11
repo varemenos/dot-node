@@ -33,4 +33,7 @@ packages=(
 	webpack
 )
 
+# source nvm before executing npm installation commands
+[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh
+
 npm install -g ${packages[@]}

@@ -1,23 +1,22 @@
 #!/usr/bin/env bash
 
+cd ~/.nvm
+
 if [ ! -e "$HOME/.nvm/nvm.sh" ]; then
 	echo "Installing nvm"
 
 	git clone https://github.com/creationix/nvm.git ~/.nvm
-	cd ~/.nvm
 	git checkout `git describe --abbrev=0 --tags`
-	. ~/.nvm/nvm.sh
 else
 	printf "nvm $(nvm current) is already installed, upgrading."
 
   # https://github.com/creationix/nvm#manual-upgrade
-	(
-	cd "$NVM_DIR"
 	git fetch origin
 	git checkout .
 	git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" origin`
-) && . "$NVM_DIR/nvm.sh"
 fi
+
+. ~/.nvm/nvm.sh
 
 nvm install 'lts/*'
 nvm install stable

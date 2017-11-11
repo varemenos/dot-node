@@ -9,6 +9,8 @@ if [ ! -e "$HOME/.nvm/nvm.sh" ]; then
 	. ~/.nvm/nvm.sh
 else
 	printf "nvm $(nvm current) is already installed, upgrading."
+
+  # https://github.com/creationix/nvm#manual-upgrade
 	(
 	cd "$NVM_DIR"
 	git fetch origin

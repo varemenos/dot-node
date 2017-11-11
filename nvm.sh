@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if ! type "nvm" > /dev/null; then
+if [ ! -e "$HOME/.nvm/nvm.sh" ]; then
 	echo "Installing nvm"
 
 	git clone https://github.com/creationix/nvm.git ~/.nvm

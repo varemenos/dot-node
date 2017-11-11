@@ -6,4 +6,5 @@ pkg.link() {
 
 pkg.install() {
 	source nvm.sh
+	source npm.sh
 }

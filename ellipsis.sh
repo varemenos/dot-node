@@ -5,6 +5,6 @@ pkg.link() {
 }
 
 pkg.install() {
-	./nvm.sh
-	./npm.sh
+	./scripts/nvm.sh
+	./scripts/npm.sh
 }

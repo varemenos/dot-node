@@ -9,7 +9,7 @@ if [ ! -e "$HOME/.nvm/nvm.sh" ]; then
 	git clone https://github.com/creationix/nvm.git "$NVM_DIR"
 	cd "$NVM_DIR"
 else
-	echo "nvm $(nvm current) is already installed, upgrading."
+	echo "nvm is already installed, upgrading."
 
   # https://github.com/creationix/nvm#manual-upgrade
 	cd "$NVM_DIR"

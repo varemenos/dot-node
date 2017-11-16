@@ -28,6 +28,7 @@ packages=(
 	npm-check-updates
 	parker
 	pm2
+	prettyjson
 	sassdoc
 	svgo
 	webpack

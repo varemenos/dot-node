@@ -31,6 +31,7 @@ packages=(
 	prettyjson
 	sassdoc
 	svgo
+	tldr
 	webpack
 )
 

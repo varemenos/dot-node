@@ -15,7 +15,6 @@ packages=(
 	grunt-cli
 	grunt-generate-configs
 	grunt-init
-	gulp
 	jasmine
 	eslint
 	jsonlint

@@ -6,3 +6,4 @@ init.author.email = aklp08@gmail.com
 init.author.url = http://adonisk.com/
 init-license = "MIT"
 init-version = "0.0.1"
+scripts-prepend-node-path=true

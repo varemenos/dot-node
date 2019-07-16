@@ -2,7 +2,7 @@
 
 export NVM_DIR="$HOME/.nvm"
 
-if [ ! -e "$HOME/.nvm/nvm.sh" ]; then
+if [ ! -e "$NVM_DIR/nvm.sh" ]; then
 	echo "Installing nvm"
 
 	#https://github.com/creationix/nvm#manual-install
